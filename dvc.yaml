@@ -1,0 +1,5 @@
+stages:
+  validate_alias:
+    cmd: python stages/validate_alias.py
+    deps: [stages/validate_alias.py, .bb/dependencies.txt, health/build-status.json, health/exact-comparison.json]
+    always_changed: true
